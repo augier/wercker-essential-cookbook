@@ -29,8 +29,8 @@ script "install_elasticsearch" do
     user "root"
     code <<-EOH
     cd
-    wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.20.5.deb
-    dpkg -i elasticsearch-0.20.5.deb
+    wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.1.deb
+    dpkg -i elasticsearch-1.3.1.deb
     EOH
 end
 
