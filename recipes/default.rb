@@ -24,17 +24,6 @@ end
 end
 
 
-script "install_elasticsearch" do
-    interpreter "bash"
-    user "root"
-    code <<-EOH
-    cd
-    wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.1.deb
-    dpkg -i elasticsearch-1.3.1.deb
-    EOH
-end
-
-
 if File.exists? "/vagrant"
   user = "vagrant"
 else
